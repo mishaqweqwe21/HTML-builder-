@@ -15,7 +15,6 @@ async function copyDir(src, dest) {
       }),
     );
 
-    // Читаем содержимое исходной папки
     const entries = await fs.readdir(src, { withFileTypes: true });
 
     // Копируем файлы и папки
