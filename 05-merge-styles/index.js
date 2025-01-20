@@ -11,8 +11,6 @@ async function mergeStyles() {
   const files = await fs.readdir(stylesFolder);
   const cssFiles = files.filter((file) => path.extname(file) === '.css');
 
-  console.log(cssFiles);
-
   let bundle = '';
 
   for (const file of cssFiles) {
